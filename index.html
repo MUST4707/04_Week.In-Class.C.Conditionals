@@ -1,44 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Basics: Introduction to Conditionals and Operators</title>
-  </head>
-  <body>
-    <h1>JavaScript Basics: Introduction to Conditionals and Operators</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to Conditionals and Boolean Logic</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 3px 6px;
+      border-radius: 4px;
+      display: block;
+      white-space: pre-wrap
+    }
+  </style>
+</head>
+<body>
+<h1>Introduction to Conditionals and Boolean Logic</h1>
+<p>Conditionals allow programs to make decisions based on specific conditions. These decisions are made using <strong>boolean logic</strong>, which evaluates expressions to <code>true</code> or <code>false</code>.</p>
 
-    <h2>Comparison Operators</h2>
-    <p>
-      Comparison operators are used to compare values and include
-      <code>==</code> (equal to), <code>></code> (greater than),
-      <code><</code> (less than), <code>>=</code> (greater than or equal to),
-      and <code><=</code> (less than or equal to).
-    </p>
+<h2>Boolean Values</h2>
+<p>In JavaScript, a boolean value is either <code>true</code> or <code>false</code>:</p>
+<code>let isRaining = true;<br>let isSunny = false;</code>
 
-    <h2>Logical Operators</h2>
-    <p>
-      Logical operators are used to determine the logic between variables or
-      values and include <code>&&</code> (and), <code>||</code> (or), and
-      <code>!</code> (not).
-    </p>
+<h2>If Statements</h2>
+<p>An <code>if</code> statement executes a block of code if the condition inside the parentheses evaluates to <code>true</code>:</p>
+<code>
+  let temperature = 30;
+  if (temperature > 25) {
+    console.log("It's a warm day!");
+  }
+</code>
 
-    <h2>Using Conditionals with Operators</h2>
-    <p>
-      We can use these operators within <code>if</code>, <code>else if</code>,
-      <code>else</code>, and <code>switch</code> statements to make more complex
-      decisions.
-    </p>
-    <h2>Using else if</h2>
-    <p>
-      The <code>else if</code> statement can be used to create multiple
-      conditional branches in your code. It is placed after an
-      <code>if</code> statement and before an <code>else</code> statement. This
-      allows you to specify a new condition to test, if the first condition is
-      false.
-    </p>
-    <p>Check the console for examples and further explanations.</p>
+<h2>If-Else Statements</h2>
+<p>The <code>else</code> block executes if the condition is <code>false</code>:</p>
+<code>
+  let isHungry = false;
+  if (isHungry) {
+    console.log("Time to eat!");
+  } else {
+    console.log("Not hungry right now.");
+  }
+</code>
 
-    <script src="script_conditionals.js"></script>
-  </body>
+<h2>Else-If Statements</h2>
+<p>Use <code>else if</code> to check multiple conditions:</p>
+<code>
+  let score = 85;
+  if (score >= 90) {
+    console.log("Grade: A");
+  } else if (score >= 80) {
+    console.log("Grade: B");
+  } else {
+    console.log("Keep trying!");
+  }
+</code>
+
+<h2>Logical Operators</h2>
+<p>Logical operators help combine multiple conditions:</p>
+<p><code>&&</code> (AND) - Both conditions must be true.</p>
+<p><code>
+    if (isRaining && temperature < 20) {
+      console.log("Wear a jacket.");
+    }</code><p>
+<p><code>||</code> (OR) - At least one condition must be true.</p>
+<p><code>
+    if (isRaining || isSunny) {
+      console.log("Weather is changing.");
+    }</code></p>
+<p><code>!</code> (NOT) - Reverses a boolean value.</p>
+<p> <code>
+    if (!isHungry) {
+    console.log("You are not hungry.");
+  }</code></p>
+
+
+<h2>Conclusion</h2>
+<p>Conditionals and boolean logic are essential for controlling program flow. Understanding these concepts allows developers to create dynamic and interactive applications.</p>
+</body>
 </html>
