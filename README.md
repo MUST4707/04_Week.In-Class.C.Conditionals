@@ -8,46 +8,70 @@ Boolean Values
 
 In JavaScript, a boolean value is either `true` or `false`:
 
-`let isRaining = true;   let isSunny = false;`
+```javascript
+let isRaining = true;
+let isSunny = false;
+```
 
 If Statements
 -------------
 
 An `if` statement executes a block of code if the condition inside the parentheses evaluates to `true`:
-
-`let temperature = 30; if (temperature > 25) { console.log("It's a warm day!"); }`
-
+```javascript
+let temperature = 30;
+if (temperature > 25) { 
+    console.log("It's a warm day!"); 
+}
+```
 If-Else Statements
 ------------------
 
 The `else` block executes if the condition is `false`:
-
-`let isHungry = false; if (isHungry) { console.log("Time to eat!"); } else { console.log("Not hungry right now."); }`
-
+```javascript
+let isHungry = false;
+if (isHungry) {
+    console.log("Time to eat!");
+} else {
+    console.log("Not hungry right now.");
+}
+```
 Else-If Statements
 ------------------
 
 Use `else if` to check multiple conditions:
-
-`let score = 85; if (score >= 90) { console.log("Grade: A"); } else if (score >= 80) { console.log("Grade: B"); } else { console.log("Keep trying!"); }`
-
+```javascript
+let score = 85;
+if (score >= 90) {
+    console.log("Grade: A");
+} else if (score >= 80) {
+    console.log("Grade: B");
+} else {
+    console.log("Keep trying!");
+}
+```
 Logical Operators
 -----------------
 
 Logical operators help combine multiple conditions:
 
 `&&` (AND) - Both conditions must be true.
-
-`if (isRaining && temperature < 20) { console.log("Wear a jacket."); }`
-
+```javascript
+if (isRaining && temperature < 20) {
+    console.log("Wear a jacket.");
+}
+```
 `||` (OR) - At least one condition must be true.
-
-`if (isRaining || isSunny) { console.log("Weather is changing."); }`
-
+```javascript
+if (isRaining || isSunny) {
+    console.log("Weather is changing.");
+}
+```
 `!` (NOT) - Reverses a boolean value.
-
-`if (!isHungry) { console.log("You are not hungry."); }`
-
+```javascript
+if (!isHungry) {
+    console.log("You are not hungry.");
+}
+```
 Conclusion
 ----------
 
